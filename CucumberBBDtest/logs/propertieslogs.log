@@ -1,0 +1,48 @@
+[DEBUG] 2021-05-24 18:44:37.434 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 18:44:37.436 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 18:44:37.437 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 18:44:37.437 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 18:44:37.437 [main] logj4 - This is a fatal message
+[DEBUG] 2021-05-24 18:44:48.418 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 18:44:48.420 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 18:44:48.420 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 18:44:48.420 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 18:44:48.422 [main] logj4 - This is a fatal message
+[TRACE] 2021-05-24 18:50:55.551 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-24 18:50:55.553 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 18:50:55.553 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 18:50:55.553 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 18:50:55.553 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 18:50:55.555 [main] logj4 - This is a fatal message
+[TRACE] 2021-05-24 18:52:22.643 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-24 18:52:22.652 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 18:52:22.653 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 18:52:22.653 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 18:52:22.653 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 18:52:22.654 [main] logj4 - This is a fatal message
+[TRACE] 2021-05-24 18:53:15.115 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-24 18:53:15.116 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 18:53:15.116 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 18:53:15.116 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 18:53:15.116 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 18:53:15.117 [main] logj4 - This is a fatal message
+[TRACE] 2021-05-24 19:03:30.635 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-24 19:03:30.640 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 19:03:30.640 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 19:03:30.640 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 19:03:30.641 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 19:03:30.647 [main] logj4 - This is a fatal message
+[DEBUG] 2021-05-24 19:05:51.957 [main] logj4 - test message
+[TRACE] 2021-05-24 19:05:51.959 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-24 19:05:51.959 [main] logj4 - This is a debug message
+[INFO ] 2021-05-24 19:05:51.960 [main] logj4 - This is an info message
+[WARN ] 2021-05-24 19:05:51.960 [main] logj4 - This is a warn message
+[ERROR] 2021-05-24 19:05:51.960 [main] logj4 - This is an error message
+[FATAL] 2021-05-24 19:05:51.961 [main] logj4 - This is a fatal message
+[DEBUG] 2021-05-25 15:00:27.505 [main] logj4 - test message
+[TRACE] 2021-05-25 15:00:27.510 [main] logj4 - This is a tracer message
+[DEBUG] 2021-05-25 15:00:27.514 [main] logj4 - This is a debug message
+[INFO ] 2021-05-25 15:00:27.515 [main] logj4 - This is an info message
+[WARN ] 2021-05-25 15:00:27.515 [main] logj4 - This is a warn message
+[ERROR] 2021-05-25 15:00:27.516 [main] logj4 - This is an error message
+[FATAL] 2021-05-25 15:00:27.516 [main] logj4 - This is a fatal message
