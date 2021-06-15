@@ -1,38 +1,19 @@
 package com.demoqa.pages;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
 
-import com.bdd.demoqa.utilities.BaseClass;
-import com.bdd.demoqa.utilities.CaptureScreenshoot;
-import com.bdd.demoqa.utilities.DesiredCapabilitessetup;
+import utility.BaseClass;
+ 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-public class AlertPages extends BaseClass {
+public class AlertPages extends BaseClass{
 
 
 	By NewTabe=By.xpath("//*[@id=\"tabButton\"]");
@@ -46,10 +27,10 @@ public class AlertPages extends BaseClass {
 	By Large_Modal = By.xpath("//button[text()='Large modal']");
 
 
-	@Test (priority=0)	
+	@Test
 	public void naviagatetoalertBrowserWindow() {
 
-
+  
 		driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']")).click();
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[3]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
@@ -258,7 +239,7 @@ public class AlertPages extends BaseClass {
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		js1.executeScript("window.scrollBy(0,000)");
 
-		readconfig.naviagetbackwards();
+		 
 	}
 
 	 
@@ -287,7 +268,13 @@ public class AlertPages extends BaseClass {
 
 		driver.findElement(On_click__Button_to_see_alert).click();
 
+	 
+
+	
+		
 		Alert alert = driver.switchTo().alert();
+		
+		
 		System.out.println(alert.getText());
 		String title = alert.getText();
 		if(title.equals("You clicked a button")){

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoqa.pages.AlertPages">
+      <class name="com.demoqa.pages.WidgedPages">
         <methods>
           <include name="quitbrowser"/>
-          <include name="setBrowserManager"/>
-          <include name="On_click_alert_will_appear_after5_seconds"/>
+          <include name="set"/>
+          <include name="WidgedtsNaviagetioin_accoridan"/>
         </methods>
-      </class> <!-- com.demoqa.pages.AlertPages -->
+      </class> <!-- com.demoqa.pages.WidgedPages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

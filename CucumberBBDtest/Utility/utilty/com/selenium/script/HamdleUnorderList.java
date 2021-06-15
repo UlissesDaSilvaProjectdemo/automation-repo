@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.bdd.demoqa.utilities.BaseClass;
+import utility.BaseClass;
 
 public class HamdleUnorderList extends BaseClass {
 	

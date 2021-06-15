@@ -11,7 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-import com.bdd.demoqa.utilities.BaseClass;
+import utility.BaseClass;
+
+
+
 
 public class BooksPages extends BaseClass  {	
 
@@ -29,26 +32,97 @@ public class BooksPages extends BaseClass  {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,400)");	 
-		
+
 		//navigate_to_form
 		driver.findElement(By.xpath("//h5[text()='Book Store Application']")).click();	
 
 	}
 
-	
- 
-	//@Test
-	public void GetTittle() {}
 
-	//@Test
-	public void GetImage() {}
 
-	//@Test
-	public void getAuthor() {}
-	//@Test
-	public void getpublisher() {}
+	@Test
+	public void Login() {
 
-	//@Test
-	public void getRows() {}
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Login']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+
+		}
+
+
+	}
+
+	@Test
+	public void BookStore() {
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Book Store']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+
+		}
+
+	}
+
+	@Test
+	public void Profile() {
+
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Profile']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+
+		}
+
+	}
+	@Test
+	public void BookStoreAPI() {
+
+
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Book Store API"));
+
+			WebElement client = elements.get(x);
+			client.click();		 	 
+		}
+
+
+
+	}
 
 }

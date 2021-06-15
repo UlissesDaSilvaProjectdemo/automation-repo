@@ -12,7 +12,11 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.bdd.demoqa.utilities.BaseClass;
+import utility.BaseClass;
+
+
+
+
 
 public class WidgedPages extends BaseClass {
 
@@ -28,17 +32,24 @@ public class WidgedPages extends BaseClass {
 	By SelectMenu = By.xpath("//*[@id=\"item-8\"]/span");
 
 
-    @Test
-	public void WidgedtsNaviagetioin() {
-		driver.findElement(By.xpath("//h5[text()='Widgets']")).click();	
-		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
-		System.out.println("Amount of elements: " + elementsCount);
-		
+	@Test
+	public void WidgedtsNaviagetioin_accoridan() {
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,400)");	 
 
+		driver.findElement(By.xpath("//h5[text()='Widgets']")).click();
+		
+	 	 
+		
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+
 		//click on TextBox
 		for (int x = 0; x < elementsCount; x++) {
+			 
 			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Accordian']"));
 			WebElement client = elements.get(x);
 			client.click();
@@ -53,24 +64,216 @@ public class WidgedPages extends BaseClass {
 	}
 
 
-	//@Test 
-	public void Accordian() {}
-	//@Test
-	public void Autocomplete() {}
-	//@test
-	public void Datapicker() {}
-	//@Test
-	public void Slider() {}
-	//@Test
-	public void ProgressBar() {}
-	//@Test
-	public void Tabs() {}
-	//@Test
-	public void Tooltips() {}
-	//@Test
-	public void Menu() {}
-	//@Test
-	public void SelectMenu() {}
+	@Test 
+	public void AutoComplete() {
+		 
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Auto Complete']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    
+		 
+	}
+	@Test
+	public void Autocomplete() {
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Autocomplete']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    
+		  
+	}
+	@Test
+	public void Datapicker() {
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Datapicker']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	
+	 
+	}
+	@Test
+	public void Slider() {
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Slider']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	
+		 
+	}
+	@Test
+	public void ProgressBar() {
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='ProgressBar']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	  
+		 
+	}
+	@Test
+	public void Tabs() {
+		 
+
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Tabs']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	  
+		 
+	}
+
+
+
+	@Test
+	public void Tooltips() {
+
+		  
+
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()=' Tool Tips']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    
+		 
+	}
+	@Test
+	public void Menu() {
+
+		 
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Menu']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    
+	 
+	}
+	@Test
+	public void SelectMenu() {
+
+		 
+
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Select Menu']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    
+		 
+	}
 
 
 

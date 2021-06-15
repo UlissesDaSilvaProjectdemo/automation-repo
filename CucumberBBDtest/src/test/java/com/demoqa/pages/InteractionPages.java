@@ -12,9 +12,12 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import com.bdd.demoqa.utilities.BaseClass;
+import utility.BaseClass;
 
-public class InteractionPages  extends BaseClass{
+ 
+ 
+
+public class InteractionPages  extends BaseClass  {
 
 	By InteractionpageNavigate = By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/span/div");
 	By Sortable = By.xpath("//*[@id=\"item-0\"]/span");
@@ -30,7 +33,8 @@ public class InteractionPages  extends BaseClass{
 		driver.findElement(By.xpath("//h5[text()='Interactions']")).click();
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 	     js.executeScript("window.scrollBy(0,400)");
-		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[1]/div/ul")).size();
+	     
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
 
@@ -50,8 +54,27 @@ public class InteractionPages  extends BaseClass{
 		
 	}
 
-  // @Test
+   @Test
 	public void Sortable() {
+	   
+	  
+	   int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Selectable']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    	 
 		
 		 
 
@@ -59,20 +82,78 @@ public class InteractionPages  extends BaseClass{
 	}
      
      
-//    //@Test
-//	public void Resizable() {}
-//
-//	//@Test
-//    public void Selectable() {}
-//	
-//	
-//    //@Test
-//	public void Dropable() {}
-//    
-//    
-//    //@Test
-//	public void Dragbale() {}
+    @Test
+	public void Resizable() {
+    	
+    	 JavascriptExecutor js = (JavascriptExecutor) driver;
+	     js.executeScript("window.scrollBy(0,400)");
+    	int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
 
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Resizable']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    	 
+    }
+
+	@Test
+    public void Selectable() {
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+	     js.executeScript("window.scrollBy(0,400)");
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Droppable']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    	 
+	}
+	
+	
+    @Test
+	public void Dropable() {
+    	
+    	int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[5]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+
+		//click on TextBox
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Dragabble']"));
+			WebElement client = elements.get(x);
+			client.click();
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+		}	    	 
+    }
+    
+    
+   
 
 
 

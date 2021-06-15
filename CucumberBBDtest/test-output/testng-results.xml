@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="11" total="12" passed="0" failed="1" skipped="0">
+<testng-results ignored="9" total="10" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-14T13:26:07 BST" name="Default suite" finished-at="2021-06-14T13:26:31 BST" duration-ms="24090">
+  <suite started-at="2021-06-15T20:51:06 BST" name="Default suite" finished-at="2021-06-15T20:51:18 BST" duration-ms="12136">
     <groups>
     </groups>
-    <test started-at="2021-06-14T13:26:07 BST" name="Default test" finished-at="2021-06-14T13:26:31 BST" duration-ms="24090">
-      <class name="com.demoqa.pages.AlertPages">
-        <test-method is-config="true" signature="setBrowserManager()[pri:0, instance:com.demoqa.pages.AlertPages@6ed3ccb2]" started-at="2021-06-14T13:26:07 BST" name="setBrowserManager" finished-at="2021-06-14T13:26:18 BST" duration-ms="11360" status="PASS">
+    <test started-at="2021-06-15T20:51:06 BST" name="Default test" finished-at="2021-06-15T20:51:18 BST" duration-ms="12136">
+      <class name="com.demoqa.pages.WidgedPages">
+        <test-method is-config="true" signature="set()[pri:0, instance:com.demoqa.pages.WidgedPages@1700915]" started-at="2021-06-15T20:51:06 BST" name="set" finished-at="2021-06-15T20:51:17 BST" duration-ms="10394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setBrowserManager -->
-        <test-method signature="On_click_alert_will_appear_after5_seconds()[pri:5, instance:com.demoqa.pages.AlertPages@6ed3ccb2]" started-at="2021-06-14T13:26:18 BST" name="On_click_alert_will_appear_after5_seconds" finished-at="2021-06-14T13:26:29 BST" duration-ms="10582" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- set -->
+        <test-method signature="WidgedtsNaviagetioin_accoridan()[pri:0, instance:com.demoqa.pages.WidgedPages@1700915]" started-at="2021-06-15T20:51:17 BST" name="WidgedtsNaviagetioin_accoridan" finished-at="2021-06-15T20:51:17 BST" duration-ms="169" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Alerts']"}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Element <h5> is not clickable at point (941,642) because another element <footer> obscures it
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-969R18B4', ip: '192.168.0.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ULISSE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf28ebfcdd126653834ccb2985a03b43
-*** Element info: {Using=xpath, value=//span[text()='Alerts']}]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 3624, moz:profile: C:\Users\Ulisses Da Silva\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67627bcd-b418-407a-a037-24e06365e99f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Alerts']"}
-  (Session info: chrome=91.0.4472.77)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <h5> is not clickable at point (941,642) because another element <footer> obscures it
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-969R18B4', ip: '192.168.0.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\ULISSE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51577}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cf28ebfcdd126653834ccb2985a03b43
-*** Element info: {Using=xpath, value=//span[text()='Alerts']}
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210105180113, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 3624, moz:profile: C:\Users\Ulisses Da Silva\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67627bcd-b418-407a-a037-24e06365e99f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -45,11 +39,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.demoqa.pages.AlertPages.On_click_alert_will_appear_after5_seconds(AlertPages.java:314)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.demoqa.pages.WidgedPages.WidgedtsNaviagetioin_accoridan(WidgedPages.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,15 +72,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- On_click_alert_will_appear_after5_seconds -->
-        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.demoqa.pages.AlertPages@6ed3ccb2]" started-at="2021-06-14T13:26:29 BST" name="quitbrowser" finished-at="2021-06-14T13:26:31 BST" duration-ms="2065" status="PASS">
+        </test-method> <!-- WidgedtsNaviagetioin_accoridan -->
+        <test-method is-config="true" signature="quitbrowser()[pri:0, instance:com.demoqa.pages.WidgedPages@1700915]" started-at="2021-06-15T20:51:17 BST" name="quitbrowser" finished-at="2021-06-15T20:51:18 BST" duration-ms="1503" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitbrowser -->
-      </class> <!-- com.demoqa.pages.AlertPages -->
+      </class> <!-- com.demoqa.pages.WidgedPages -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
