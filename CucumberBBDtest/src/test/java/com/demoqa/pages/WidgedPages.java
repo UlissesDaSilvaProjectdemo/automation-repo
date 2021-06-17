@@ -32,6 +32,8 @@ public class WidgedPages extends BaseClass {
 	By SelectMenu = By.xpath("//*[@id=\"item-8\"]/span");
 
 
+
+
 	@Test
 	public void WidgedtsNaviagetioin_accoridan() {
 
@@ -39,9 +41,9 @@ public class WidgedPages extends BaseClass {
 		js.executeScript("window.scrollBy(0,400)");	 
 
 		driver.findElement(By.xpath("//h5[text()='Widgets']")).click();
-		
-	 	 
-		
+
+
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
@@ -49,7 +51,7 @@ public class WidgedPages extends BaseClass {
 
 		//click on TextBox
 		for (int x = 0; x < elementsCount; x++) {
-			 
+
 			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Accordian']"));
 			WebElement client = elements.get(x);
 			client.click();
@@ -60,14 +62,22 @@ public class WidgedPages extends BaseClass {
 				e.printStackTrace();
 			}
 
-		}	    
+
+
+
+
+		}
+
+
 	}
+
+
 
 
 	@Test 
 	public void AutoComplete() {
-		 
-		 
+
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
@@ -85,11 +95,11 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	    
-		 
+
 	}
 	@Test
 	public void Autocomplete() {
-		 
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
@@ -106,11 +116,11 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	    
-		  
+
 	}
 	@Test
 	public void Datapicker() {
-		 
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
@@ -129,14 +139,13 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	
-	 
+
 	}
 	@Test
 	public void Slider() {
-		 
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
-
 
 		//click on TextBox
 		for (int x = 0; x < elementsCount; x++) {
@@ -151,15 +160,13 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	
-		 
+
 	}
 	@Test
 	public void ProgressBar() {
-		 
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
-
-
 
 		//click on TextBox
 		for (int x = 0; x < elementsCount; x++) {
@@ -174,11 +181,11 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	  
-		 
+
 	}
 	@Test
 	public void Tabs() {
-		 
+
 
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
@@ -198,7 +205,7 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	  
-		 
+
 	}
 
 
@@ -206,7 +213,7 @@ public class WidgedPages extends BaseClass {
 	@Test
 	public void Tooltips() {
 
-		  
+
 
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
@@ -225,12 +232,12 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	    
-		 
+
 	}
 	@Test
 	public void Menu() {
 
-		 
+
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
 
@@ -248,12 +255,12 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	    
-	 
+
 	}
 	@Test
 	public void SelectMenu() {
 
-		 
+
 
 		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[4]/div/ul")).size();
 		System.out.println("Amount of elements: " + elementsCount);
@@ -272,7 +279,7 @@ public class WidgedPages extends BaseClass {
 			}
 
 		}	    
-		 
+
 	}
 
 

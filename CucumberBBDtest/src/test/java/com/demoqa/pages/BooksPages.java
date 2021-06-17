@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import utility.BaseClass;
+import utility.RedConfig;
 
 
 
@@ -25,7 +26,9 @@ public class BooksPages extends BaseClass  {
 	By getAuthor=By.xpath("//*[@id=\"item-4\"]/span");
 	By getpublisher = By.xpath("//*[@id=\"searchBox\"]");
 	By getRows = By.xpath("//*[@id=\\\"searchBox\\\"]");
-
+	
+	
+	 
 
 	@Test
 	public void navigatetoBookStore() {
@@ -35,6 +38,8 @@ public class BooksPages extends BaseClass  {
 
 		//navigate_to_form
 		driver.findElement(By.xpath("//h5[text()='Book Store Application']")).click();	
+		
+		
 
 	}
 
@@ -57,10 +62,99 @@ public class BooksPages extends BaseClass  {
 			WebElement client = elements.get(x);
 			client.click();		 
 
+			
+			 
 		}
-
-
+		
+		RedConfig config = new RedConfig();
+		config.password();
+		config.username();
 	}
+	
+	
+	@Test
+	 public  void  Login_UserName() {
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Login']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+		 
+		 driver.findElement(By.xpath("//*[@id=\"userName\"]")).sendKeys("Test");
+			
+		}
+	}
+	
+	@Test
+	 public  void  Login_Password() {
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Login']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+			
+		}
+	}
+	 
+	
+	@Test
+	 public void login_clickBtn() {
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,200)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Login']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+	}
+		 driver.findElement(By.xpath("//*[@id=\"login\"]")).click(); //btn
+	      
+	 }
+	
+	@Test
+    public void Login_Register_to_NewStore() {
+		int elementsCount= driver.findElements(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div[1]/div/div/div[6]/div/ul")).size();
+		System.out.println("Amount of elements: " + elementsCount);
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,400)");	  
+
+
+		//click on Browser Windonws_btn  == //span[text()='']Browser Windows
+		for (int x = 0; x < elementsCount; x++) {
+			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Login']"));
+
+			WebElement client = elements.get(x);
+			client.click();		 
+	}
+		driver.findElement(By.xpath("//*[@id=\"newUser\"]")).click(); //NewUSer_Btn
+    	
+    }
+	
+	
+	
 
 	@Test
 	public void BookStore() {
@@ -76,7 +170,12 @@ public class BooksPages extends BaseClass  {
 			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Book Store']"));
 
 			WebElement client = elements.get(x);
-			client.click();		 
+			client.click();	
+			
+			
+			driver.findElement(By.xpath("//*[@id=\"searchBox\"]")).sendKeys("searchBook");
+			
+			driver.findElement(By.xpath("//*[@id=\"see-book-Understanding ECMAScript 6\"]/a")).click();
 
 		}
 
@@ -97,7 +196,16 @@ public class BooksPages extends BaseClass  {
 			List<WebElement> elements = driver.findElements(By.xpath("//span[text()='Profile']"));
 
 			WebElement client = elements.get(x);
-			client.click();		 
+			client.click();		
+			
+			String tittle = driver.getTitle();
+			System.out.println(tittle);
+			
+			
+			
+			driver.findElement(By.xpath("//*[@id=\"notLoggin-label\"]/a[1]")).click(); //loginBtn_btn
+		    driver.navigate().back();
+		    driver.findElement(By.xpath("//*[@id=\"notLoggin-label\"]/a[2]")).click(); //newRegister_btn
 
 		}
 
